@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text should be visible.
+  </div>
+  <script>
+    //Incorrect way to hide the element
+    document.getElementById('myDiv').style.display = 'hidden';
+    //This is a common mistake; it should be style.visibility = 'hidden'; to hide content while keeping space
+    //or style.display = 'none'; to remove space
+  </script>
+</body>
+</html>
